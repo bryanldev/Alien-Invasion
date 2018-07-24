@@ -52,6 +52,8 @@ def check_play_button(stats, play_button, mouse_x, mouse_y):
     """Start a new game when the player clicks Play."""
     if play_button.rect.collidepoint(mouse_x, mouse_y):
         stats.game_active = True
+
+
 def check_fleet_edges(ai_settings, aliens):
     """Respond appropriately if any aliens have reached an edge."""
     for alien in aliens.sprites():
@@ -103,7 +105,7 @@ def check_bullet_alien_collisions(ai_settings, screen, ship, aliens, bullets):
 
 def update_aliens(ai_settings, stats, screen, ship, aliens, bullets):
     """
-    Check if the fleet is at an edge, and then update 
+    Check if the fleet is at an edge, and then update
     the positions of all aliens in the fleet.
     """
     check_fleet_edges(ai_settings, aliens)
