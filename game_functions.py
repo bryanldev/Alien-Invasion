@@ -52,7 +52,9 @@ def check_fleet_edges(ai_settings, aliens):
             break
 
 
-def update_screen(ai_settings, screen, ship, aliens, bullets):
+def update_screen(ai_settings, screen, stats, ship, aliens,
+                  bullets, play_button):
+    """Update images on the screen and flip to the new screen."""
     #  Redraw the screen during each pass through the loop.
     screen.fill(ai_settings.bg_color)
     ship.blitme()
@@ -61,6 +63,10 @@ def update_screen(ai_settings, screen, ship, aliens, bullets):
     # Redraw all bullets behind ship and aliens.
     for bullet in bullets.sprites():
         bullet.draw_bullet()
+
+    # Draw the play button if the game is inactive.
+    if not stats.game_active:
+        play_button.draw_button()
 
     # Make the most recently drawn screen visible.
     pygame.display.flip()
