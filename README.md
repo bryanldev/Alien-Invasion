@@ -18,8 +18,22 @@ the player’s ship or reaches the bottom of the screen, the player
 loses a ship. If the player loses three ships, the game ends.
 
 ## 🔧 Requeriments
-- Python 3.x
-- Pygame
+- [Python](https://www.python.org/) 3.x +
+- [Pygame](https://www.pygame.org/)
 
-## :video_game: Let's play
-Just run alien_invasion.py and enjoy!
+## :video_game: Controls
+
+- Space-bar
+  - Shoot
+
+- Arrows keys (left - right)
+  - Move the ship left / right
+
+## ⚔ Let's play
+Just run 
+
+```
+$ python alien_invasion.py
+``` 
+
+and enjoy!
