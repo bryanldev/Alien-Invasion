@@ -30,10 +30,19 @@ loses a ship. If the player loses three ships, the game ends.
   - Move the ship left / right
 
 ## ⚔ Let's play
-Just run 
+
+### Cloning the Repository
+
+```
+$ git clone https://github.com/bryanlds/Alien-Invasion.git
+
+$ cd Alien-Invasion
+```
+
+### Running 
 
 ```
 $ python alien_invasion.py
 ``` 
 
-and enjoy!
+Enjoy!
